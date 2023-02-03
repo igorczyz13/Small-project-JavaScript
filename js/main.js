@@ -1,33 +1,25 @@
-const name = 'lisa'
+const pass = 'asd1212123123§!'
 
-let x = 10
-let y = 5
-console.log(x);
+if(pass.length > 10 && pass.includes('!')) {
+    console.log('Masz bardzo dobre haslo');
+} else if (pass.length > 10) {
+    console.log('Masz dobre haslo');
+} else {
+    console.log('Masz chujowe haslo mordo');
+}
 
-x = x + y
-console.log(x);
 
-x += y
-console.log(x);
 
-x = x - y
-x -= y
-console.log(x);
+///
 
-x = x * y
-console.log(x);
+const color = 'blue'
 
-x *= y
-console.log(x);
-
-x = x / y
-console.log(x);
-
-x /= y 
-console.log(x);
-
-x = x % y
-console.log(x);
-
-x %= y
-console.log(x);
+if (color == 'blue') {
+    if (10 < 0) {
+        console.log('true true');
+    } else {
+        console.log('okok');
+    }
+} else {
+    console.log('false');
+}
