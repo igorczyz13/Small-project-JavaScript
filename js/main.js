@@ -10,7 +10,7 @@ if (pass.length > 10 && pass.includes('!')) {
 
 
 
-///
+//-------------------------------------
 
 const color = 'blue'
 
@@ -24,7 +24,7 @@ if (color == 'blue') {
     console.log('false');
 }
 
-// switch
+// switch ----------------------------------
 
 const day = 'piatek'
 
@@ -47,3 +47,43 @@ switch (day) {
     default:
         console.log('weeeekend!');
 }
+
+// instrukcje warunkowe ------------------------------
+
+const x = 10
+
+if (x > 20) {
+    console.log(`${x} > 20`);
+} else {
+    console.log(`${x} < 20`);
+}
+
+// to samo inaczej napisane (operator warunkowy)
+
+
+const newX = x > 20 ? `${x} > 20` : `${x} < 20`;
+console.log(newX);
+
+//
+
+const isLoggedIn = false
+
+function loggedIn() {
+    console.log('uzytkownik jest zalogowany');
+}
+
+function loggedOut() {
+    console.log('uzytkownik nie jest zalogowany');
+}
+
+//
+
+if (isLoggedIn) {
+    loggedIn()
+} else {
+    loggedOut()
+}
+
+// the same shit
+
+isLoggedIn ? loggedIn() : loggedOut()
