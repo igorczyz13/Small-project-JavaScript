@@ -126,4 +126,22 @@ if (x1 < y2) {
 }
 
 // ----------------------------- TASK 4
+
+const promo = '20%'
+
+switch (promo) {
+    case '10%':
+        console.log('Dziś mam 10% znizki');
+        break
+    case '20%':
+        console.log('Dziś mam 20% znizki');
+        break
+    case '30%':
+        console.log('Dziś mam 30% zniżki');
+        break
+        default:
+        console.log(`Dziś mamy ${promo} zniżki`);
+}       
+
+
 // ----------------------------- TASK 5
