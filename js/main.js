@@ -87,3 +87,13 @@ if (isLoggedIn) {
 // the same shit
 
 isLoggedIn ? loggedIn() : loggedOut()
+
+
+// -----------------------------
+
+const X = 50
+const Y = 30
+
+if (X > Y ) {
+    console.log(`${X} jest wieksze od ${Y}`);
+}
