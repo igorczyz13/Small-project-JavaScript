@@ -8,8 +8,6 @@ if (pass.length > 10 && pass.includes('!')) {
     console.log('Masz chujowe haslo mordo');
 }
 
-
-
 //-------------------------------------
 
 const color1 = 'blue'
@@ -139,9 +137,9 @@ switch (promo) {
     case '30%':
         console.log('Dziś mam 30% zniżki');
         break
-        default:
+    default:
         console.log(`Dziś mamy ${promo} zniżki`);
-}       
+}
 
 
 // ----------------------------- TASK 5
@@ -154,4 +152,29 @@ const check = X2 % 2 == 0 ? 'X jest parzyste' : 'X nie jest parzyste'
 console.log(check);
 
 // ----------------------------- TASK 6
+//Stworz zmienna x i przypisz do niej wartosc 50, za pomoca instrukji warunkowej sprawdz czy X jest wiekszy lub rowny 100, jest jest wypisz w konsoli x > 100, nastepnie sprawdz czy X jest mniejszy niz 100, ale wiekszy niz 30, jesli jest wypisz w konsoli x jest sredniakiem, jesr x jest mniejszy lub rowny 30, wypisz w konsoli x jest maly
 
+const X3 = 50
+
+if (X3 >= 100) {
+    console.log('X > 100');
+} else if (X3 < 100 && X3 > 30) {
+    console.log(('X jest sredniakiem').toUpperCase());
+} else {
+    console.log('X jest malenki');
+}
+
+// teraz metoda DRY
+
+const X4 = 50
+let text
+
+if (X4 >= 100) {
+    text = 'X4 >= 100'
+} else if (X4 < 100 && X4 > 30) {
+    text = 'X jest sredniakiem'
+} else {
+    text = 'X jest malenki'
+}
+
+console.log(text.toUpperCase());
