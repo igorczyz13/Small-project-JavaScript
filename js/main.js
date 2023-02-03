@@ -12,9 +12,9 @@ if (pass.length > 10 && pass.includes('!')) {
 
 //-------------------------------------
 
-const color = 'blue'
+const color1 = 'blue'
 
-if (color == 'blue') {
+if (color1 == 'blue') {
     if (10 < 0) {
         console.log('true true');
     } else {
@@ -89,7 +89,7 @@ if (isLoggedIn) {
 isLoggedIn ? loggedIn() : loggedOut()
 
 
-// -----------------------------
+// ----------------------------- TASK 1
 
 const X = 50
 const Y = 30
@@ -97,3 +97,22 @@ const Y = 30
 if (X > Y ) {
     console.log(`${X} jest wieksze od ${Y}`);
 }
+
+// ----------------------------- TASK 2
+
+// == - porównujemy zawartosc,  === - porownujemy zawartosc i typ danych
+
+const color = 'blue'
+const newColor = 'green'
+
+if (color === newColor) {
+    console.log('Kolory sie zgadzaja');
+} else {
+    console.log('Kolory sie nie zgadzaja');
+}
+
+// ----------------------------- TASK 3
+
+
+// ----------------------------- TASK 4
+// ----------------------------- TASK 5
