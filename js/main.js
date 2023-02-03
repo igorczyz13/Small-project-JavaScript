@@ -94,7 +94,7 @@ isLoggedIn ? loggedIn() : loggedOut()
 const X = 50
 const Y = 30
 
-if (X > Y ) {
+if (X > Y) {
     console.log(`${X} jest wieksze od ${Y}`);
 }
 
@@ -113,6 +113,17 @@ if (color === newColor) {
 
 // ----------------------------- TASK 3
 
+const x1 = 100
+const y2 = 50
+
+if (x1 < y2) {
+    console.log(`${x1} > ${y2}`);
+} else if (x1 === y2) {
+    console.log(`${x1} = ${y2}`);
+} else {
+    (x1 < y2)
+    console.log(`${x1} < ${y2}`);
+}
 
 // ----------------------------- TASK 4
 // ----------------------------- TASK 5
