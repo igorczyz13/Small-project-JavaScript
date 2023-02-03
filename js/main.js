@@ -145,3 +145,13 @@ switch (promo) {
 
 
 // ----------------------------- TASK 5
+// stwórz zmienna x i przypisz do niej wartosc 10, za pomoca operatora warunkowego sprawdz czy,
+// wartosc przypisana do x jest parzysta, w konsoli wypisz odpowiednia informacje np: x jest parzyste
+
+const X2 = 10
+
+const check = X2 % 2 == 0 ? 'X jest parzyste' : 'X nie jest parzyste'
+console.log(check);
+
+// ----------------------------- TASK 6
+
