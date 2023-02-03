@@ -1,16 +1,33 @@
-const num1 = 23
-const num2 ='45'
+const name = 'lisa'
 
-console.log(num1 + num2);
-console.log(num2 *1);
+let x = 10
+let y = 5
+console.log(x);
 
-const num3 = 'abcd'
-console.log(0/0);
+x = x + y
+console.log(x);
 
-const num4 = 1351.124
+x += y
+console.log(x);
 
-console.log(num4.toFixed())
+x = x - y
+x -= y
+console.log(x);
 
-const num5 = '123'
+x = x * y
+console.log(x);
 
-console.log(parseInt(num5));
+x *= y
+console.log(x);
+
+x = x / y
+console.log(x);
+
+x /= y 
+console.log(x);
+
+x = x % y
+console.log(x);
+
+x %= y
+console.log(x);
