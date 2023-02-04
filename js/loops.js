@@ -79,6 +79,8 @@ console.log(x1);
 // // ----------------------------- task 1.4
 // stworz tablice z liczbami: 5, 8, 10, 23, 48, 60. stworz petle for of, ktora podzieli liczby przez 5 i wypisze je w konsoli.
 
+// dla ambitnych, za pomoca petli for of oraz instrukcji warunkowej if, sprawdz, ktore cyfry i liczby sa parzyste, a ktore nie
+
 const numbers = [5, 8, 10, 23, 48, 60]
 
 for (const number of numbers) {
@@ -87,7 +89,7 @@ for (const number of numbers) {
 
 for (const number of numbers) {
     if(number % 2 === 0) {
-        console.log(`liczba ${number} jest parzysta`);
+        console.log(`liczba ${number} jest parzysta`,);
     } else {
         console.log(`liczba ${number} nie jest parzysta`);
     }
