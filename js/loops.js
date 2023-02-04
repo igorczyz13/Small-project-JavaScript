@@ -46,10 +46,23 @@ for (const number of numbers) {
     console.log(number * 2);
 }
 
-// ----------------------------- task 1
+// ----------------------------- task 1.1
+// stworz tablice z nazwami miast. za pomoca petli for, w konsoli wypisz miasta w zadaniu:
+// to miasto nazywa sie:...
 
 const cities = ['Toki', 'Los Angeles', 'London', 'Rome', 'Paris']
 
 for (let i = 0; i < cities.length; i++) {
     console.log(`to miasto nazywa sie: ${cities[i]}`);
 }
+
+// ----------------------------- task 1.2
+// stworz zmienna x i przypisz do niej wartosc 0, stworz petle while, ktora bedzie zwiekszala X o 2 (2,4,6,8,10). Petla ma sie wykonac do momentu, w ktorym X bedzie wieksze lub rowne 10 do punktu 2 - taki zapis nie rozwiaze zadania: x++ x++, skorzystaj z operatorow przypisania
+
+let x = 0
+
+while(x < 10) {
+    x += 2
+    console.log(x);
+}
+
