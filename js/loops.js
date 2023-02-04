@@ -75,3 +75,20 @@ do {
     x1 -= 3
 } while (x1 > 0)
 console.log(x1);
+
+// // ----------------------------- task 1.4
+// stworz tablice z liczbami: 5, 8, 10, 23, 48, 60. stworz petle for of, ktora podzieli liczby przez 5 i wypisze je w konsoli.
+
+const numbers = [5, 8, 10, 23, 48, 60]
+
+for (const number of numbers) {
+    console.log(number / 5);
+}
+
+for (const number of numbers) {
+    if(number % 2 === 0) {
+        console.log(`liczba ${number} jest parzysta`);
+    } else {
+        console.log(`liczba ${number} nie jest parzysta`);
+    }
+}
