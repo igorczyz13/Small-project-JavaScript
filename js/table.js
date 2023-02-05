@@ -32,26 +32,61 @@
 
 // ---------------------
 
+// const numbers = [1, 2, 3, 4, 5]
+// console.log(numbers);
+
+// numbers.unshift(100, 200, 'abcd')
+// console.log(numbers);
+
+// numbers.shift()
+// console.log(numbers);
+
+// // unshift - dodaje elementy na poczatku tablicy
+// // shift - usuwa elementy z indeksem 0
+
+// const colors = ['red', 'green', 'blue']
+// console.log(colors);
+
+// colors.push('gold', 123)
+// console.log(colors);
+
+// colors.pop()
+// console.log(colors);
+
+// // push - dodaje elementy na koncu tablicy
+// // pop - usuwa ostatni element
+
+// ---------------------
+
 const numbers = [1, 2, 3, 4, 5]
-console.log(numbers);
 
-numbers.unshift(100, 200, 'abcd')
-console.log(numbers);
+// function multiply(x) {
+//     return x * 2
+// }
 
-numbers.shift()
-console.log(numbers);
+// const newNumbers = numbers.map(multiply)
+// console.log(numbers);
+// console.log(newNumbers);
 
-// unshift - dodaje elementy na poczatku tablicy
-// shift - usuwa elementy z indeksem 0
+// numbers.push(6, 7, 8)
 
-const colors = ['red', 'green', 'blue']
-console.log(colors);
+const abc = ['a', 'b', 'c']
+const newAbc = numbers.concat(6, 7, 8, true, abc)
 
-colors.push('gold', 123)
-console.log(colors);
+// console.log(newAbc);
+// console.log(numbers);
 
-colors.pop()
-console.log(colors);
 
-// push - dodaje elementy na koncu tablicy
-// pop - usuwa ostatni element
+// ...
+
+console.log(abc);
+console.log(... abc);
+
+const drinks = ['pepsi', 'kawa', 'sok']
+const meals = ['schabowy', 'spaghetti', 'zupa']
+
+const menu = [...drinks, ...meals]
+console.log(menu);
+
+const menu2 = drinks.concat(meals)
+console.log(menu2);
