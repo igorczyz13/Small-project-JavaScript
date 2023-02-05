@@ -89,7 +89,7 @@ for (const number of numbers) {
 
 for (const number of numbers) {
     if(number % 2 === 0) {
-        console.log(`liczba ${number} jest parzysta`,);
+        console.log(`liczba ${number} jest parzysta`);
     } else {
         console.log(`liczba ${number} nie jest parzysta`);
     }
