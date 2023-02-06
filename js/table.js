@@ -58,41 +58,51 @@
 
 // ---------------------
 
-const numbers = [1, 2, 3, 4, 5]
+// const numbers = [1, 2, 3, 4, 5]
 
-// function multiply(x) {
-//     return x * 2
-// }
+// // function multiply(x) {
+// //     return x * 2
+// // }
 
-// const newNumbers = numbers.map(multiply)
-// console.log(numbers);
-// console.log(newNumbers);
+// // const newNumbers = numbers.map(multiply)
+// // console.log(numbers);
+// // console.log(newNumbers);
 
-// numbers.push(6, 7, 8)
+// // numbers.push(6, 7, 8)
 
-const abc = ['a', 'b', 'c']
-const newAbc = numbers.concat(6, 7, 8, true, abc)
+// const abc = ['a', 'b', 'c']
+// const newAbc = numbers.concat(6, 7, 8, true, abc)
 
-// console.log(newAbc);
-// console.log(numbers);
-
-
-// ...
-
-console.log(abc);
-console.log(... abc);
-
-const drinks = ['pepsi', 'kawa', 'sok']
-const meals = ['schabowy', 'spaghetti', 'zupa']
-
-const menu = [...drinks, ...meals]
-console.log(menu);
+// // console.log(newAbc);
+// // console.log(numbers);
 
 
-const menu2 = drinks.concat(meals)
-console.log(menu2);
+// // ...
+
+// console.log(abc);
+// console.log(... abc);
+
+// const drinks = ['pepsi', 'kawa', 'sok']
+// const meals = ['schabowy', 'spaghetti', 'zupa']
+
+// const menu = [...drinks, ...meals]
+// console.log(menu);
+
+
+// const menu2 = drinks.concat(meals)
+// console.log(menu2);
 
 // ------------------------------------- task 1.5
 
 //stworz zmienna numbers2 i za pomoca metody slice, wytnij z tablicy numbers pierwsze dwa zera, nastepnie stworz numbers3 i za pomoca metody slice, wytnij trzy ostatnie dwojki z tablicy numbers, obydwie te zmienne wypisz w konsoli. nastepnie za pomoca metody splice, wytnij dwa ostatnie elementy z tablicy colors. te nowe elementy wsadz do tablicy o nazwie randomStuff. Nowe tablice wyloguj w konsoli. Teraz przejdz do tablicy cars. musisz wyciac z niej wszystkie samochody i przypisac do tablicy newCars. skorzystaj oczywiscie z metody splice. podczasz wycinania, dodaj napis 'test' do tablicy cars. w konsoli wyloguj tablice cars oraz newCars.
+
+const numbers = [0, 0, 1, 1, 2, 2, 2]
+const colors = ['red', 'green', 'blue', true, 123]
+const cars = [123, true, 'audi', 'bmw', 'mercedes', 'ferrari', '🤷‍♂️', '👀']
+
+const numbers2 = numbers.slice(0, 2)
+console.log(numbers2);
+
+const numbers3 = numbers.slice(4, 7)
+console.log(numbers3);
 
