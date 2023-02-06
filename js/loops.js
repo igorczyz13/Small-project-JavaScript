@@ -94,3 +94,4 @@ for (const number of numbers) {
         console.log(`liczba ${number} nie jest parzysta`);
     }
 }
+
