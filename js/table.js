@@ -103,6 +103,10 @@ const cars = [123, true, 'audi', 'bmw', 'mercedes', 'ferrari', '🤷‍♂️', 
 const numbers2 = numbers.slice(0, 2)
 console.log(numbers2);
 
-const numbers3 = numbers.slice(4, 7)
+const numbers3 = numbers.slice(-3)
 console.log(numbers3);
+
+const randomStuff =colors.splice(-2)
+console.log(colors);
+console.log(randomStuff);
 
