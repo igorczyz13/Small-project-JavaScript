@@ -106,7 +106,10 @@ console.log(numbers2);
 const numbers3 = numbers.slice(-3)
 console.log(numbers3);
 
-const randomStuff =colors.splice(-2)
+const randomStuff = colors.splice(-2)
 console.log(colors);
 console.log(randomStuff);
 
+const newCars = cars.splice(2,4, 'test')
+console.log(cars);
+console.log(newCars);
