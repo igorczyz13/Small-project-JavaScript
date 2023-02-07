@@ -96,20 +96,39 @@
 
 //stworz zmienna numbers2 i za pomoca metody slice, wytnij z tablicy numbers pierwsze dwa zera, nastepnie stworz numbers3 i za pomoca metody slice, wytnij trzy ostatnie dwojki z tablicy numbers, obydwie te zmienne wypisz w konsoli. nastepnie za pomoca metody splice, wytnij dwa ostatnie elementy z tablicy colors. te nowe elementy wsadz do tablicy o nazwie randomStuff. Nowe tablice wyloguj w konsoli. Teraz przejdz do tablicy cars. musisz wyciac z niej wszystkie samochody i przypisac do tablicy newCars. skorzystaj oczywiscie z metody splice. podczasz wycinania, dodaj napis 'test' do tablicy cars. w konsoli wyloguj tablice cars oraz newCars.
 
-const numbers = [0, 0, 1, 1, 2, 2, 2]
-const colors = ['red', 'green', 'blue', true, 123]
-const cars = [123, true, 'audi', 'bmw', 'mercedes', 'ferrari', '🤷‍♂️', '👀']
+// const numbers = [0, 0, 1, 1, 2, 2, 2]
+// const colors = ['red', 'green', 'blue', true, 123]
+// const cars = [123, true, 'audi', 'bmw', 'mercedes', 'ferrari', '🤷‍♂️', '👀']
 
-const numbers2 = numbers.slice(0, 2)
-console.log(numbers2);
+// const numbers2 = numbers.slice(0, 2)
+// console.log(numbers2);
 
-const numbers3 = numbers.slice(-3)
-console.log(numbers3);
+// const numbers3 = numbers.slice(-3)
+// console.log(numbers3);
 
-const randomStuff = colors.splice(-2)
-console.log(colors);
-console.log(randomStuff);
+// const randomStuff = colors.splice(-2)
+// console.log(colors);
+// console.log(randomStuff);
 
-const newCars = cars.splice(2,4, 'test')
-console.log(cars);
-console.log(newCars);
+// const newCars = cars.splice(2,4, 'test')
+// console.log(cars);
+// console.log(newCars);
+
+// ---------------------------------------------
+
+const numbers = [0, 23, 48, 175, 2, 34, 11]
+
+// function number(x) {
+//     return x % 2 === 0
+// }
+
+// console.log(numbers.filter(number));
+
+numbers.forEach(number => console.log(number * 5))
+
+console.log(numbers.includes(0));
+console.log(numbers.indexOf(34));
+
+
+
+
