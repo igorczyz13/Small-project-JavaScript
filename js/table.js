@@ -116,19 +116,25 @@
 
 // ---------------------------------------------
 
-const numbers = [0, 23, 48, 175, 2, 34, 11]
+// const numbers = [0, 23, 48, 175, 2, 34, 11]
 
-// function number(x) {
-//     return x % 2 === 0
-// }
+// // function number(x) {
+// //     return x % 2 === 0
+// // }
 
-// console.log(numbers.filter(number));
+// // console.log(numbers.filter(number));
 
-numbers.forEach(number => console.log(number * 5))
+// numbers.forEach(number => console.log(number * 5))
 
-console.log(numbers.includes(0));
-console.log(numbers.indexOf(34));
+// console.log(numbers.includes(0));
+// console.log(numbers.indexOf(34));
 
+// -------------------------------------------------
 
+const numbers = [0, 1, 2, 3]
 
+const newNumbers = numbers.forEach(number => console.log(number * 2))
+console.log(newNumbers);
 
+const mapNumbers = numbers.map(number => number * 2)
+console.log(mapNumbers);
