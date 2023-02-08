@@ -152,3 +152,4 @@ console.log(letters);
 console.log(letters.includes('c'));
 
 // ----------------------------------------------- task 1.7
+// stworz tablice z cyframi, stworz druga tablice z jedzeniem, stworz nowa zmienna i za pomoca odpowiedniej metody, przypisz do niej polaczone tablice z cyframi i jedzeniem. nowa tablice wyloguj w konosli. bonus: wykonaj to zadanie z operatorem SPREAD ...
