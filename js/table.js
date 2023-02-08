@@ -143,13 +143,22 @@
 // stwórz tablice const leters = ['c','d']. za pomoca odpowiednich metod dodaj na poczatku litery 'a' oraz 'b', na koncu 'e' oraz 'f', tablice wyloguj w konsoli. za pomoca odpowiedniej metody sprawdz czy tablica zaiera litere 'c' i wynik wyloguj w konsoli.
 
 
-const letters = ['c', 'd']
+// const letters = ['c', 'd']
 
-letters.unshift('a', 'b')
-letters.push('e', 'f')
+// letters.unshift('a', 'b')
+// letters.push('e', 'f')
 
-console.log(letters);
-console.log(letters.includes('c'));
+// console.log(letters);
+// console.log(letters.includes('c'));
 
 // ----------------------------------------------- task 1.7
 // stworz tablice z cyframi, stworz druga tablice z jedzeniem, stworz nowa zmienna i za pomoca odpowiedniej metody, przypisz do niej polaczone tablice z cyframi i jedzeniem. nowa tablice wyloguj w konosli. bonus: wykonaj to zadanie z operatorem SPREAD ...
+
+const numbers = [1, 2, 3]
+const meals = ['ramen', 'beef', 'octopus']
+const mix = numbers.concat(meals);
+
+console.log(mix);
+
+const mix1 = [...numbers, ...meals]
+console.log(mix1);
