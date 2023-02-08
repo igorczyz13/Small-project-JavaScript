@@ -154,11 +154,15 @@
 // ----------------------------------------------- task 1.7
 // stworz tablice z cyframi, stworz druga tablice z jedzeniem, stworz nowa zmienna i za pomoca odpowiedniej metody, przypisz do niej polaczone tablice z cyframi i jedzeniem. nowa tablice wyloguj w konosli. bonus: wykonaj to zadanie z operatorem SPREAD ...
 
-const numbers = [1, 2, 3]
-const meals = ['ramen', 'beef', 'octopus']
-const mix = numbers.concat(meals);
+// const numbers = [1, 2, 3]
+// const meals = ['ramen', 'beef', 'octopus']
+// const mix = numbers.concat(meals);
 
-console.log(mix);
+// console.log(mix);
 
-const mix1 = [...numbers, ...meals]
-console.log(mix1);
+// const mix1 = [...numbers, ...meals]
+// console.log(mix1);
+
+// ----------------------------------------------- task 1.8
+// stworz tablice z cyframi: 1,5,13,26,48. Za pomoca forEach lub map (która metoda bedzie lepsza do tego zadania?), wydrukuj w konosoli wszystkie liczby z tablicy, ale pomnozone przez 5. Nowa tablice przypisz do nowej zmiennej. Za pomoca instrukcji warunkowej if oraz odpowiedniej petli, przejdz po nowo otworzonej tablicy i sprawdz, ktore liczby sa parzyste. Wynik wyloguj w konsoli za pomoca templates stringa, tak jak widac na podgladzie.
+
