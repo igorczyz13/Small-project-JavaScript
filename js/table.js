@@ -138,3 +138,13 @@ console.log(newNumbers);
 
 const mapNumbers = numbers.map(number => number * 2)
 console.log(mapNumbers);
+
+// ----------------------------------------------- task 1.6
+// stwórz tablice const leters = ['c','d']. za pomoca odpowiednich metod dodaj na poczatku litery 'a' oraz 'b', na koncu 'e' oraz 'f', tablice wyloguj w konsoli. za pomoca odpowiedniej metody sprawdz czy tablica zaiera litere 'c' i wynik wyloguj w konsoli.
+
+// // push - dodaje elementy na koncu tablicy
+// // pop - usuwa ostatni element
+// // unshift - dodaje elementy na poczatku tablicy
+// // shift - usuwa elementy z indeksem 0
+
+
