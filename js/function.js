@@ -33,3 +33,59 @@ function hello(name, age) {
 }
 
 hello('igor', 27)
+
+// funkcja anonimowa
+
+const heading = document.querySelector('h1')
+
+heading.addEventListener('click', function() {
+    console.log('kliknieto mnie');
+})
+
+// funkcja strzalkowa
+
+const arrowFunction = () => {
+    // tak wyglada funkcja strzałkowa
+}
+
+// -------------------------------------------
+function test(name) {
+    console.log(`mam na imie ${name}`);
+}
+
+test('klaudia')
+// -------------------------------------------
+
+const test2 = (name) => {
+    console.log(`Mam na imie ${name}`);
+}
+
+test2('lisa')
+// -------------------------------------------
+
+const test3 = name => console.log(`Mam na imie ${name}`);
+test3('tomek')
+
+const test4 = (name, age) => console.log(name, age)
+test4('name', 123)
+
+// -------------------------------------------
+
+function add(num1, num2) {
+    return num1 + num2
+}
+
+const add2 =  (num1, num2) => {
+    console.log('czesc');
+    return num1 * num2
+}
+
+const days = ['poniedziałek', 'wtorek', 'sroda']
+const days2 = days.forEach(function(day) {
+    console.log(day);
+})
+console.log('--------');
+
+const days3 = days.forEach(day => console.log(day))
+
+// -------------------------------------------
