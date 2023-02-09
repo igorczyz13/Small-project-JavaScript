@@ -166,17 +166,31 @@
 // ----------------------------------------------- task 1.8
 // stworz tablice z cyframi: 1,5,13,26,48. Za pomoca forEach lub map (która metoda bedzie lepsza do tego zadania?), wydrukuj w konosoli wszystkie liczby z tablicy, ale pomnozone przez 5. Nowa tablice przypisz do nowej zmiennej. Za pomoca instrukcji warunkowej if oraz odpowiedniej petli, przejdz po nowo otworzonej tablicy i sprawdz, ktore liczby sa parzyste. Wynik wyloguj w konsoli za pomoca templates stringa, tak jak widac na podgladzie.
 
-const numbers = [1, 5, 13, 26, 48]
+// const numbers = [1, 5, 13, 26, 48]
 
-const num = numbers.map(number => number * 5);
+// const num = numbers.map(number => number * 5);
 
-console.log(num);
+// console.log(num);
 
 
-for (number of num) {
-    if (number % 2 === 0) {
-        console.log(`liczba parzysta: ${number}`);
-    } else {
-        console.log(`liczba nieparzysta: ${number}`);
-    }
+// for (const number of num) {
+//     if (number % 2 === 0) {
+//         console.log(`liczba parzysta: ${number}`);
+//     } else {
+//         console.log(`liczba nieparzysta: ${number}`);
+//     }
+// }
+
+// ----------------------------------------------- task 1.9
+// stworz tablice z jednym kolorem(zapisz go malymi literami). za pomoca odpowiednich metod dodaj nowy kolor na poczatku i na koncu tabeli, przeiteruj po tablicy za pomoca petli for. w konsoli wypisz zdanie: 'moj ulubiony kolor to [nazwa_koloru]. nazwa koloru powinna byc zapisana duzymi literami. za pomoca odpowiednich metod na stringu wypisz w konsoli kolory takm aby zaczynaly sie od wielkiej litery(zamiast calego wyrazu wypisanego wielkimi literami)
+
+const colors = ['blue']
+
+colors.unshift('green')
+colors.push('pink')
+
+console.log(colors);
+
+for (let i = 0; i < colors.length; i++) {
+    console.log(`moj ulubiony kolor to ${colors[i].charAt(0).toUpperCase() + colors[i].slice(1)}`);
 }
