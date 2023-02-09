@@ -184,13 +184,30 @@
 // ----------------------------------------------- task 1.9
 // stworz tablice z jednym kolorem(zapisz go malymi literami). za pomoca odpowiednich metod dodaj nowy kolor na poczatku i na koncu tabeli, przeiteruj po tablicy za pomoca petli for. w konsoli wypisz zdanie: 'moj ulubiony kolor to [nazwa_koloru]. nazwa koloru powinna byc zapisana duzymi literami. za pomoca odpowiednich metod na stringu wypisz w konsoli kolory takm aby zaczynaly sie od wielkiej litery(zamiast calego wyrazu wypisanego wielkimi literami)
 
-const colors = ['blue']
+// const colors = ['blue']
 
-colors.unshift('green')
-colors.push('pink')
+// colors.unshift('green')
+// colors.push('pink')
 
-console.log(colors);
+// console.log(colors);
 
-for (let i = 0; i < colors.length; i++) {
-    console.log(`moj ulubiony kolor to ${colors[i].charAt(0).toUpperCase() + colors[i].slice(1)}`);
+// for (let i = 0; i < colors.length; i++) {
+//     console.log(`moj ulubiony kolor to ${colors[i].charAt(0).toUpperCase() + colors[i].slice(1)}`);
+// }
+
+// ----------------------------------------------- task 2.0
+// stworz stringa(jednego) z samochodami 'audi, mercedes, bmw, nissan, doge'. za pomoca metody na stringu, zrob z niego tablice i przypisz do nowej zmiennej (jest taka metoda, ktora ma w nazwie cos wspolnego z dzieleniem/podziałami). za pomoca operatora warunkowego sprawdz, czy dlugosc tablicy jest wieksza niz 3, jesli tak - wypisz w konsoli 'jest ok', jesli nie- wyloguj 'nie jes ok'. za pomoca instrukcji warunkowej i odpowiedniej metody sprawdz, czy nasza tablica zawiera marke audi. jesli tak - za pomoca odpowiedniej metody dodaj nowa marke do tablicy, jesli nie - za pomoca odpowiedniej metody usun ostatni element z tablicy
+
+const cars = 'audi, mercedes, bmw, nissan, doge'
+
+const newCars = cars.split(', ')
+
+newCars.length > 3 ? console.log('jest ok') : console.log('nie jest ok');
+
+if (newCars.includes('audi')) {
+    newCars.push('Fiat')
+} else {
+    newCars.pop()
 }
+
+console.log(newCars);
