@@ -19,3 +19,5 @@ console.log('---');
 // opcja druga
 
 names.forEach(el => console.log(el.toUpperCase()))
+
+
