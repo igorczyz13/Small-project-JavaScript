@@ -9,13 +9,6 @@ let score = []
 const add = (x, y) => {
     score = x + y
 
-    // if(score % 2 === 0) {
-    //     evenMsg()
-    // } else {
-    //     oddMsg()
-    // }
-    // opcja 2 zamiast if
-
     score % 2 === 0 ? evenMsg() : oddMsg()
 }
 
@@ -27,3 +20,5 @@ const oddMsg = (params) => {
 }
 
 add(10,11)
+
+// ---------------------------------------- Task 2.2
