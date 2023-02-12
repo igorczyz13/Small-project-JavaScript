@@ -40,3 +40,20 @@ fahrenheit(20)
 // ---------------------------------------- Task 2.3
 // Stworz zmienne num oraz numbers. do tej pierwszej przypisz wartosc 10, a do drugiej pusta tablice, stworz petle for, ktora bedzie wykonywala sie tak dlugo, az i bedzie mniejsza od num, petla ma dodawac i do tablicy numbers. stworz funkcje, ktora przyjmie jeden parametr, w funkcji ma byc if, ktory sprawdzi, czy liczba podana w argumnecie jest podzielna przez 3 oraz jest rozna od zera. jesli tak - wypisz w konsoli x jest podzielne przez 3, jesli nie - wypisz w konsoli x nie jest podzielne przez 3 lub x = 0. za pomoca forEach odwolaj sie do tablicy numbers
 
+const num = 10
+const numbers = []
+
+for (let i = 0; i < num; i++) {
+    numbers.push(i)
+}
+
+const checkNumbers = (number) => {
+    if (number % 3 === 0 && number !== 0) {
+        console.log(`${number} jest podzielne przez 3`);
+    } else {
+        console.log(`${number} jest podzielne przez 3 lub ${number} = 0`);
+    }
+}
+
+
+numbers.forEach(checkNumbers)
