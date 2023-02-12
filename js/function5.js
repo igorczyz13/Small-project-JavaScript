@@ -22,3 +22,17 @@ const oddMsg = (params) => {
 add(10,11)
 
 // ---------------------------------------- Task 2.2
+//stworz zeminne celsius oraz temp, stworz funkcje fahrenheit, ktora przyjmie jeden parametr, argument ma zostac przypisany do zmiennej celsius(wewnatrz funkcji), funkcja ma przekonwertowac C na F, wyniki przypisz do zmiennej temp. wzor: T(F) = T(C) x 1,8 + 32. wywolaj funkcje, podaj do niej jakies argumenty(typ number czyli nasza temperature). wynik wypisz w konsoli za pomoca template stringa, np X C = Y F
+
+let celsius
+let temp
+
+const fahrenheit = (c) => {
+    celsius = c
+
+    temp = celsius * 1.8 + 32
+
+    console.log(`${c} = ${temp}`);
+}
+
+fahrenheit(20)
