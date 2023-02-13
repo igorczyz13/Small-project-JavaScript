@@ -58,3 +58,29 @@ const checkNumbers = (number) => {
 
 
 numbers.forEach(checkNumbers)
+
+// bug #001
+
+const dog = {
+    paws: 4
+}
+const cat = {
+    ...dog
+}
+
+cat.meow = true
+
+if (dog.meow) {
+    console.log("That's not a dog!")
+}
+
+// bug #002
+const now = new Date()
+const future = new Date()
+
+future.setHours(now.getHours() + 6)
+
+console.log({
+    now,
+    future
+})
