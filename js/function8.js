@@ -5,22 +5,22 @@
 // zmien zawartosc ostatniego elemntu na tekst 'jestem ostatnim elementem'
 // za pomoca js, ustal style dla ostatniego elementu: backgroud-color: blue, padding 20px 40px, fz: 48px
 
-const ulList = document.createElement('ul')
-document.body.append(ulList)
-const number = 10
+// const ulList = document.createElement('ul')
+// document.body.append(ulList)
+// const number = 10
 
-for (let i = 1; i <= number; i++) {
-    const liItem = document.createElement('li')
-    liItem.textContent = i
-    ulList.append(liItem)
-}
+// for (let i = 1; i <= number; i++) {
+//     const liItem = document.createElement('li')
+//     liItem.textContent = i
+//     ulList.append(liItem)
+// }
 
-const lastLi = ulList.querySelector('li:last-child')
-lastLi.textContent = 'jestem ostatnim elementem'
+// const lastLi = ulList.querySelector('li:last-child')
+// lastLi.textContent = 'jestem ostatnim elementem'
 
-lastLi.style.backgroundColor = 'blue'
-lastLi.style.padding = '20px 40px'
-lastLi.style.fontSize = '48px'
+// lastLi.style.backgroundColor = 'blue'
+// lastLi.style.padding = '20px 40px'
+// lastLi.style.fontSize = '48px'
 
 //----------------------------------------------------Task 2.6
 // Pobierz pliki z zasobow
@@ -35,3 +35,32 @@ lastLi.style.fontSize = '48px'
 //#2 wjechania mysza na div.square
 //#3 zjechania mysza z div.square
 //#4 klikniecia w przycisk z pizza
+
+
+const btn1 = document.querySelector('.btn1')
+const btn2 = document.querySelector('.btn2')
+const p1 = document.querySelector('.p1')
+const p2 = document.querySelector('.p2')
+const square = document.querySelector('square')
+
+const fun1 = () => {
+    console.log('czesc');
+}
+
+const fun2 = () => {
+    square.style.background = 'tomato'
+}
+
+const fun3 = () => {
+    square.style.background = 'royalblue'
+}
+
+const fun4 = () => {
+    p1.classList.toggle('show')
+    p2.classList.toggle('show')
+}
+
+btn1.addEventListener('dblclick', fun1)
+square.addEventListener('mouseenter', fun2)
+square.addEventListener('mouseenter', fun3)
+btn2.addEventListener('click', fun4)
