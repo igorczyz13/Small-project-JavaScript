@@ -86,3 +86,33 @@ if (n === 1) {
 }
 
 console.log(n);
+
+// ----------------- BUG #005
+
+// function addToArray(item, array) {
+//     const newArray = array
+//     newArray.push(item)
+
+//     return newArray
+// }
+
+// const fruits = ['apple', 'orange']
+// const favFruits = addToArray('banana', fruits)
+
+// console.log({fruits, favFruits});
+
+// poprawne rozwiazanie
+
+function addToArray(item, array) {
+    const newArray = array.concat(item)
+
+    return newArray
+}
+
+const fruits = ['apple', 'orange']
+const favFruits = addToArray('banana', fruits)
+
+console.log({
+    fruits,
+    favFruits
+});
