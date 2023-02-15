@@ -64,3 +64,25 @@ btn1.addEventListener('dblclick', fun1)
 square.addEventListener('mouseenter', fun2)
 square.addEventListener('mouseenter', fun3)
 btn2.addEventListener('click', fun4)
+
+// ---------------- BUG #004
+
+// var n = 1
+
+// if (n === 1) {
+//     var n = 2
+//     console.log(n);
+// }
+
+// console.log(n);
+
+// poprawne rozwiazanie
+
+let n = 1
+
+if (n === 1) {
+    let n = 2
+    console.log(n);
+}
+
+console.log(n);
